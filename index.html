@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYLE studio | Sistemi AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">HYLE<span>studio</span></a>
+    <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#about">About</a>
+        <a href="#progetti">Progetti</a>
+        <a href="#governance">Governance & Etica</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h1 class="reveal" style="top: 15vh; left: 80px;">Progettiamo e realizziamo<br>sistemi AI esclusivi e funzionali</h1>
+    <p class="reveal hero-sub" style="top: 65vh; right: 80px; text-align: right;">portiamo sicurezza e tranquillità nelle tue decisioni</p>
+    <p class="reveal hero-footer" style="bottom: 8vh; left: 80px;">Conoscere il contesto: tu e la tua azienda siete fondamentali per comprendere dove si vuole arrivare</p>
+</section>
+
+<section id="servizi">
+    <p class="reveal servizi-intro" style="top: 15vh; right: 80px; text-align: right;">Sistemi generativi completamente dedicati all’azienda che impediscono di commettere errori</p>
+    <div class="reveal" style="top: 55vh; left: 80px;">
+        <span class="label">Applicazioni:</span>
+        <div class="list-item">uniche</div>
+        <div class="list-item">specifiche</div>
+        <div class="list-item">create per darti il risultato che ti attendi</div>
+    </div>
+    <p class="reveal servizi-outro" style="bottom: 12vh; right: 80px; text-align: right;">Sicurezza ed affidabilità<br>pensate per durare nel tempo</p>
+</section>
+
+<section id="about">
+    <p class="reveal about-quote" style="top: 15vh; left: 80px;">la soluzione non è una risposta<br>ma una domanda posta in modo corretto</p>
+    <div class="reveal" style="top: 60vh; left: 80px;">
+        <p class="bold-ai">l'AI</p>
+        <p class="ai-desc">e' straordinaria utilizzata a questo livello partendo dai dati possiamo avere le domande che ci servono per trovare le risposte</p>
+    </div>
+    <p class="reveal side-text" style="top: 110vh; right: 80px; text-align: right;">strutture dinamiche in grado di evolvere restando in equilibrio</p>
+    <p class="reveal footer-text" style="bottom: 10vh; left: 80px;">Attraversare i problemi interagendo con tutte le informazioni disponibili</p>
+</section>
+
+<section id="progetti">
+    <div class="reveal" style="top: 30vh; left: 80px;">
+        <span class="label">Come lavoriamo davvero</span>
+        <p class="work-txt">Analisi del contesto reale<br>Azienda o persona<br>Vincoli, rischi, dati, responsabilità</p>
+    </div>
+    <div class="reveal" style="top: 140vh; right: 80px; text-align: right;">
+        <span class="label">Progettazione del sistema</span>
+        <p class="work-txt">Architettura AI<br>Flussi decisionali<br>Livelli di sicurezza<br>errori umani</p>
+    </div>
+    <div class="reveal quote-box" style="top: 320vh; left: 80px;">
+        <p class="thin-lg">Sistemi sicuri, affidabili e governabili, non strumenti che lasciano responsabilità al caso<br>non progetta concept.<br>costruisce sistemi funzionanti.</p>
+    </div>
+    <div class="reveal" style="top: 420vh; right: 80px; text-align: right;">
+        <p class="bold-xl">L'AI non ha buon senso<br>Se un sistema conta davvero, questo va previsto, non ignorato</p>
+    </div>
+</section>
+
+<section id="governance">
+    <div class="reveal" style="top: 15vh; right: 80px; text-align: right;">
+        <h3 class="gov-title">Ogni sistema che prende decisioni deve essere governabile.</h3>
+        <p class="gov-sub">Ogni decisione automatizzata ha un impatto etico.</p>
+    </div>
+    <div class="reveal" style="top: 70vh; left: 80px;">
+        <span class="label">Sicurezza dei dati</span>
+        <p class="gov-main">La sicurezza non è opzionale.</p>
+        <p class="gov-detail">protegge tutti i dati con crittografia e isolamento<br>minimizza l'uso dei dati allo stretto necessario</p>
+    </div>
+    <p class="reveal gov-final" style="bottom: 15vh; right: 80px; text-align: right;">Nessuna azione critica è lasciata a automatismi ciechi.</p>
+</section>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
